@@ -33,6 +33,10 @@ addButton.addEventListener('click', () => {
     if (taskText !== '') {
       addTask(taskText);
       taskInput.value = '';
+    
+    } else {
+    alert('Please enter a task To-Do')
+    return;
     }
   });
   
@@ -42,6 +46,7 @@ addButton.addEventListener('click', () => {
       if (taskText !== '') {
         addTask(taskText);
         taskInput.value = '';
+
       }
     }
   });
