@@ -1,5 +1,4 @@
 // Initialize and Load Tasks
-// Initialize and Load Tasks
 document.addEventListener('DOMContentLoaded', () => {
   
     // Select DOM Elements
@@ -75,7 +74,8 @@ addButton.addEventListener('click', () => {
       const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
       storedTasks.forEach((taskText) => addTask(taskText, false));
     }
-  
+    loadTasks();
+    
     // Saving Tasks to Local Storage
     function updateTasksInLocalStorage(taskText = '') {
       const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
